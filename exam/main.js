@@ -76,34 +76,40 @@
 ///დაწერეთ ფუნქცია რომელიც არგუმენტად მიღებულ (პროდუქტის სახელი, ფასი, შექმნის თარიღ)
 /// დინამიურად დააგენერირებს ჰტმლ ტეგებს და დახატავს დომში
 
-// function dataChild(array){
-//     for(const data of array){
-        
+
+
+
+// function generateProductHTML(name, price, createdDate) {
+
+//     const productDiv = document.createElement('div');
+//     const nameHeader = document.createElement('h2');
+//     nameHeader.textContent = name;
+//     const pricePara = document.createElement('p');
+//     pricePara.textContent = `Price: $${price}`;
+//     const datePara = document.createElement('p');
+//     datePara.textContent = `Created Date: ${createdDate}`;
+//     productDiv.appendChild(nameHeader);
+//     productDiv.appendChild(pricePara);
+//     productDiv.appendChild(datePara);
+//     return productDiv;
+//   }
+  
+//   const products = [
+//     { name: "Product 1", price: 200, created_at: "01-02-2022" }
+//   ];
+//   products.forEach(product => {
+//     const productHTML = generateProductHTML(product.name, product.price, product.created_at);
+//     document.body.appendChild(productHTML);
+//   });
+  
+
+
+// class user {
+//     constructor(name,age,address){
+// this.name = name ;
+// this.age = age;
+// this.address = address;
 //     }
 // }
-
-// dataChild( [{ name: "Product 1", price: 200, created_at: "01-02-2022" }])
-
-function generateProductHTML(name, price, createdDate) {
-
-    const productDiv = document.createElement('div');
-    const nameHeader = document.createElement('h2');
-    nameHeader.textContent = name;
-    const pricePara = document.createElement('p');
-    pricePara.textContent = `Price: $${price}`;
-    const datePara = document.createElement('p');
-    datePara.textContent = `Created Date: ${createdDate}`;
-    productDiv.appendChild(nameHeader);
-    productDiv.appendChild(pricePara);
-    productDiv.appendChild(datePara);
-    return productDiv;
-  }
-  
-  const products = [
-    { name: "Product 1", price: 200, created_at: "01-02-2022" }
-  ];
-  products.forEach(product => {
-    const productHTML = generateProductHTML(product.name, product.price, product.created_at);
-    document.body.appendChild(productHTML);
-  });
-  
+// const userName = new user('Ani',21,'tbilisi');
+// console.log(userName);
