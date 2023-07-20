@@ -44,67 +44,53 @@
 // }
 // console.log(uniquenumbers([1,2,3,1,1,1,2,2,3,4]))
 
-function removeextranumbers(inputArray) {
-    const countMap = {};
-    const resultArray = [];
+// function removeextranumbers(inputArray) {
+//     const countMap = {};
+//     const resultArray = [];
   
-    for (const num of inputArray) {
-      countMap[num] = (countMap[num] || 0) + 1;
-    }
+//     for (const num of inputArray) {
+//       countMap[num] = (countMap[num] || 0) + 1;
+//     }
   
-    for (const num of inputArray) {
-      if (countMap[num] === 1) {
-        resultArray.push(num);
-      }
-    }
+//     for (const num of inputArray) {
+//       if (countMap[num] === 1) {
+//         resultArray.push(num);
+//       }
+//     }
   
-    return resultArray;
-  }
+//     return resultArray;
+//   }
   
-  const input = ["1", "1", "2", "3", "3", "1"];
-  const result = removeextranumbers(input);
-  console.log(result); // Output: ["2"]
+//   const input = ["1", "1", "2", "3", "3", "1"];
+//   const result = removeextranumbers(input);
+//   console.log(result); // Output: ["2"]
   
 
 ////დაწერეთ ფუნქცია რომელიც  ereis gadaaqcevs objectat
 
-// let arr= [
-//     { name: "george", phone: "+995555555" },
-//     { name: "alex", phone: "5990202020" },
-//     { name: "lika", phone: "599020202" }
-//   ]
-//   function arrr(){
-//     const obj1 = Object.assign({}, arr);
-//     console.log(obj1[0]); 
-// }
-// function dataObject(data_obj){
-//     let obj = {};
-//     data_obj.forEach((item) => {
-//         obj[item.name] = item.name;
-//     });
-//     return obj;
-// }
 
-// let info = [
+
+// function convertListToObject(infoList) {
+//     const resultObject = {};
+  
+//     for (const item of infoList) {
+//       if (item.name !== "lika") {
+//         resultObject[item.name] = item.phone;
+//       }
+//     }
+  
+//     return resultObject;
+//   }
+  
+//   const info = [
 //     { name: "george", phone: "+995555555" },
 //     { name: "alex", phone: "5990202020" },
 //     { name: "lika", phone: "599020202" }
 //   ];
   
-//   console.log(dataObject(info))
-
-//   function convertArrayToObject() {
-//     const obj = arr.reduce((result, item, index) => {
-//       if (index === 0 || index === 1) {
-//         result[`item${index + 1}`] = item;
-//       }
-//       return result;
-//     }, {});
+//   const result = convertListToObject(info);
+//   console.log(result);
   
-//     console.log(obj);
-//   }
-  
-//   convertArrayToObject();
   
 
 ///დაწერეთ ფუნქცია რომელიც არგუმენტად მიღებულ (პროდუქტის სახელი, ფასი, შექმნის თარიღ)
