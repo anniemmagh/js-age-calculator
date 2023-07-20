@@ -44,6 +44,28 @@
 // }
 // console.log(uniquenumbers([1,2,3,1,1,1,2,2,3,4]))
 
+function removeextranumbers(inputArray) {
+    const countMap = {};
+    const resultArray = [];
+  
+    for (const num of inputArray) {
+      countMap[num] = (countMap[num] || 0) + 1;
+    }
+  
+    for (const num of inputArray) {
+      if (countMap[num] === 1) {
+        resultArray.push(num);
+      }
+    }
+  
+    return resultArray;
+  }
+  
+  const input = ["1", "1", "2", "3", "3", "1"];
+  const result = removeextranumbers(input);
+  console.log(result); // Output: ["2"]
+  
+
 ////დაწერეთ ფუნქცია რომელიც  ereis gadaaqcevs objectat
 
 // let arr= [
