@@ -1,4 +1,4 @@
-//// 1. ყოველ ხუთ წამში ჰტმლ დოკუმენტშ დაამატებს დივ ტეგს ჰელოუ ვორდის ტექსტით
+// // 1. ყოველ ხუთ წამში ჰტმლ დოკუმენტშ დაამატებს დივ ტეგს ჰელოუ ვორდის ტექსტით
 // function addElement() {
 //     setInterval(() => {
 //       const div = document.createElement('div');
@@ -19,7 +19,7 @@
   
 
 
-//// 2. დაწერეთ ფუნქცია რომელიც  ღილაკის კლიკზე ცალკე ტებში გახსნის არგუმენტად მიღებულ ურლს
+// // 2. დაწერეთ ფუნქცია რომელიც  ღილაკის კლიკზე ცალკე ტებში გახსნის არგუმენტად მიღებულ ურლს
 
 // const button = document.getElementById('button');
 // function linkfoo(url){
@@ -33,7 +33,7 @@
 //     window.open(url, "_blank");
 // }
 
-/// დავწეროთ ფუქნცია რომელიც არ გამოიტანს გამეორებულ ციფრებს
+// / დავწეროთ ფუქნცია რომელიც არ გამოიტანს გამეორებულ ციფრებს
 
 // let a = ["1", "1", "2", "3", "3", "1"];
 // let unique = a.filter((item, i, ar) => ar.indexOf(item) === i);
@@ -66,7 +66,7 @@
 //   console.log(result); // Output: ["2"]
   
 
-////დაწერეთ ფუნქცია რომელიც  ereis gadaaqcevs objectat
+// //დაწერეთ ფუნქცია რომელიც  ereis gadaaqcevs objectat
 
 
 
@@ -91,10 +91,22 @@
 //   const result = convertListToObject(info);
 //   console.log(result);
   
-  
+// function dataObject(data_obj){
+//     let obj = {};
+//     data_obj.forEach((item) => {
+//         obj[item.name] = item.phone
+//     });
+//     return obj
+// }
+// let info = [
+//     { name: "george", phone: "+995555555" },
+//     { name: "alex", phone: "5990202020" },
+//     { name: "lika", phone: "599020202" }
+// ]
+// console.log(dataObject(info))
 
-///დაწერეთ ფუნქცია რომელიც არგუმენტად მიღებულ (პროდუქტის სახელი, ფასი, შექმნის თარიღ)
-/// დინამიურად დააგენერირებს ჰტმლ ტეგებს და დახატავს დომში
+// /დაწერეთ ფუნქცია რომელიც არგუმენტად მიღებულ (პროდუქტის სახელი, ფასი, შექმნის თარიღ)
+// / დინამიურად დააგენერირებს ჰტმლ ტეგებს და დახატავს დომში
 
 
 
@@ -134,7 +146,7 @@
 // const userName = new user('Ani',21,'tbilisi');
 // console.log(userName);
 
-//დაწერეთ ფუნქცია რომელიც მიღებული  prodct_price,product_percentage შემდეგ უკან დააბრუნებს ფასდაკლებულ ფასს
+// დაწერეთ ფუნქცია რომელიც მიღებული  prodct_price,product_percentage შემდეგ უკან დააბრუნებს ფასდაკლებულ ფასს
 
 // function applySale(prodct_price,product_percentage){
 //     return prodct_price - (prodct_price * product_percentage) /prodct_price
@@ -205,7 +217,7 @@
 //   console.log(totalAmount); // Output: 1000
   
 
-/////////bolo davaleba valtuaze
+// ///////bolo davaleba valtuaze
 // function convertToGEL(products) {
 //     const conversionRate = 3.5;
 //     const convertedPricesContainer = document.getElementById('converted-prices');
