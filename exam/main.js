@@ -113,3 +113,9 @@
 // }
 // const userName = new user('Ani',21,'tbilisi');
 // console.log(userName);
+
+
+// function applySale(prodct_price,product_percentage){
+//     return prodct_price - (prodct_price * product_percentage) /prodct_price
+// }
+// applySale();
