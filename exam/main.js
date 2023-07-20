@@ -8,6 +8,14 @@
 //   }
   
 //   addElement();
+
+// function addHelloWorldText() {
+//     const container = document.getElementById("helloWorldContainer");
+//     const helloWorldText = document.createTextNode("Hello World");
+//     container.appendChild(helloWorldText);
+// }
+
+// setInterval(addHelloWorldText, 2000);
   
 
 
@@ -20,6 +28,10 @@
 //     })
 // }
 // linkfoo('https://www.youtube.com/')
+
+// function openURLInTab(url) {
+//     window.open(url, "_blank");
+// }
 
 /// დავწეროთ ფუქნცია რომელიც არ გამოიტანს გამეორებულ ციფრებს
 
@@ -114,8 +126,31 @@
 // const userName = new user('Ani',21,'tbilisi');
 // console.log(userName);
 
+//დაწერეთ ფუნქცია რომელიც მიღებული  prodct_price,product_percentage შემდეგ უკან დააბრუნებს ფასდაკლებულ ფასს
 
 // function applySale(prodct_price,product_percentage){
 //     return prodct_price - (prodct_price * product_percentage) /prodct_price
 // }
 // applySale();
+// function applySale(prodct_price, product_percentage) {
+//     // Ensure both inputs are valid positive numbers
+//     if (typeof prodct_price !== 'number' || typeof product_percentage !== 'number' ||
+//         prodct_price <= 0 || product_percentage < 0) {
+//       throw new Error('Invalid input. Both prodct_price and product_percentage should be positive numbers.');
+//     }
+  
+//     // Calculate the discount amount
+//     const discountAmount = (prodct_price * product_percentage) / 100;
+  
+//     // Calculate the discounted price
+//     const discountedPrice = prodct_price - discountAmount;
+  
+//     return discountedPrice;
+//   }
+  
+//   const originalPrice = 100;
+//   const discountPercentage = 20;
+  
+//   const discountedPrice = applySale(originalPrice, discountPercentage);
+//   console.log("Discounted Price:", discountedPrice); // Output: 80
+  
