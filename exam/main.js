@@ -162,3 +162,45 @@
 //   const discountedPrice = applySale(originalPrice, discountPercentage);
 //   console.log("Discounted Price:", discountedPrice); // Output: 80
   
+
+// დავწეროთ ფუნქცია რომელიც
+// 1.მიღებული არგუმენტებიდან სიას გაფილტრავს(ატოვებს მხოლოდ პროდუქტებს რომელთა ფასი მეტია 100-ზე
+// 2.დასორტავს ფასის მიხედვიტ(პატარადან დიდისკენ)
+// 3.ყოველ ელემენტს დაამატებს ახალ ატრიბუტს is_manual:true -ს.
+// ინფუთი :[{product_id:1, price:200},{product_id:2, price:50},{product_id:3, price:500}]
+// სასურველი შედეგი::[{product_id:1, price:200},{product_id:3, price:500}].
+// სასურველია რომ გამოვიყენოთ filter, map, sort მეთოდები გადაბმით(method chainning)
+
+// function filterSortAndAddAttribute(products) {
+//     return products
+//       .filter(product => product.price > 100)
+//       .sort((a, b) => a.price - b.price);
+//   }
+  
+//   const input = [
+//     { product_id: 1, price: 200 },
+//     { product_id: 2, price: 50 },
+//     { product_id: 3, price: 500 }
+//   ];
+  
+//   const desiredResult = filterSortAndAddAttribute(input);
+//   console.log(desiredResult);
+  
+
+// // დაწერე ფუნქცია რომელიც დააბრუნებს არგუმენტად მიღებული ხარისხების ჯამს.
+// // ინფუთი: [{product_id:1,amount:200},{product_id:2,amount:300},{product_id:3,amount:500}]
+// // სასურველია გამოვიყენოთ reduce მეთოდი
+
+// function sumAmounts(products) {
+//     return products.reduce((acc, product) => acc + product.amount, 0);
+//   }
+  
+//   const input = [
+//     { product_id: 1, amount: 200 },
+//     { product_id: 2, amount: 300 },
+//     { product_id: 3, amount: 500 }
+//   ];
+  
+//   const totalAmount = sumAmounts(input);
+//   console.log(totalAmount); // Output: 1000
+  
