@@ -204,3 +204,25 @@
 //   const totalAmount = sumAmounts(input);
 //   console.log(totalAmount); // Output: 1000
   
+
+/////////bolo davaleba valtuaze
+// function convertToGEL(products) {
+//     const conversionRate = 3.5;
+//     const convertedPricesContainer = document.getElementById('converted-prices');
+
+//     products.forEach((product) => {
+//       const convertedPrice = product.price_in_usd * conversionRate;
+//       const convertedPriceElement = document.createElement('p');
+//       convertedPriceElement.textContent = `Product ID: ${product.product_id}, Price in GEL: ${convertedPrice} GEL`;
+//       convertedPricesContainer.appendChild(convertedPriceElement);
+//     });
+//   }
+
+//   // Sample input data
+//   const products = [
+//     { product_id: 1, price_in_usd: 1200 },
+//     { product_id: 2, price_in_usd: 1600 },
+//   ];
+
+//   // Call the function to perform the conversion and create dynamic HTML markup
+//   convertToGEL(products);
